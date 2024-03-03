@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Water Resource App</string>
+    <string name="nameTextHint">Water resource name</string>
+    <string name="locationTextHint">Location</string>
+    <string name="typeTextHint">Type</string>
+    <string name="addBtnText">Add</string>
+    <string name="headerCol1">Water Resource Name</string>
+    <string name="headerCol2">Location</string>
+    <string name="headerCol3">Type</string>
+</resources>

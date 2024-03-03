@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="@string/nameTextHint"
+        android:autofillHints="Water resource name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="@string/locationTextHint"
+        android:autofillHints="Location"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/typeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="@string/typeTextHint"
+        android:autofillHints="Water resource type"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/addBtnText"
+        />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        >
+        <TableRow
+            tools:ignore="UselessParent">
+            <TextView
+                android:text="@string/headerCol1"
+                android:textStyle="bold"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="4dp"
+                android:background="@drawable/border"/>
+            <TextView
+                android:text="@string/headerCol2"
+                android:textStyle="bold"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="4dp"
+                android:background="@drawable/border"/>
+            <TextView
+                android:text="@string/headerCol3"
+                android:textStyle="bold"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="4dp"
+                android:background="@drawable/border"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
